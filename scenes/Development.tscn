@@ -1,0 +1,128 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/Actors/Player.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 30, 30 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 30, 30 )
+
+[node name="World" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" type="KinematicBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 110, 70 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Player"]
+texture = ExtResource( 2 )
+
+[node name="Collider" type="CollisionShape2D" parent="Player"]
+shape = SubResource( 1 )
+
+[node name="Floor" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 510, 570 )
+scale = Vector2( 16.24, 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor"]
+texture = ExtResource( 2 )
+
+[node name="collider" type="CollisionShape2D" parent="Floor"]
+shape = SubResource( 2 )
+
+[node name="Floor2" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 110, 210 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor2"]
+texture = ExtResource( 2 )
+
+[node name="collider" type="CollisionShape2D" parent="Floor2"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="Floor3" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 110, 270 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor3"]
+texture = ExtResource( 2 )
+
+[node name="collider" type="CollisionShape2D" parent="Floor3"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="Floor4" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 110, 330 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor4"]
+texture = ExtResource( 2 )
+
+[node name="collider" type="CollisionShape2D" parent="Floor4"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="Floor5" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 110, 390 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor5"]
+texture = ExtResource( 2 )
+
+[node name="collider" type="CollisionShape2D" parent="Floor5"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="Floor6" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 110, 450 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor6"]
+texture = ExtResource( 2 )
+
+[node name="collider" type="CollisionShape2D" parent="Floor6"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="Floor7" type="StaticBody2D" parent="."]
+editor/display_folded = true
+position = Vector2( 110, 510 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Floor7"]
+texture = ExtResource( 2 )
+
+[node name="collider" type="CollisionShape2D" parent="Floor7"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
